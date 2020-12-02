@@ -1,10 +1,5 @@
 # PHP SuperClosure
 
-[![Total Downloads](https://img.shields.io/packagist/dt/jeremeamia/superclosure.svg?style=flat)][1]
-[![Build Status](https://img.shields.io/travis/jeremeamia/super_closure/master.svg?style=flat)][2]
-[![MIT License](https://img.shields.io/packagist/l/jeremeamia/superclosure.svg?style=flat)][10]
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jeremeamia/super_closure)
-
 A PHP Library for serializing closures and anonymous functions.
 
 ---
@@ -166,7 +161,7 @@ should _choose the fastest analyzer that supports the features you need_.
   serialized closures if you plan on storing or transporting them. Read the
   **Signing Closures** section below for details on how to do this.
 4. Cannot serialize closures that are defined within `eval()`'d code. This
-  includes re-serializing a closure that has been unserialized. 
+  includes re-serializing a closure that has been unserialized.
 
 ### Analyzers
 
@@ -238,7 +233,7 @@ var_dump($analyzer->analyze($closure));
 
 ### Signing Closures
 
-Version 2.1+ of SuperClosure allows you to specify a signing key, when you 
+Version 2.1+ of SuperClosure allows you to specify a signing key, when you
 instantiate the Serializer. Doing this will configure your Serializer to
 sign any closures you serialize and verify the signatures of any closures
 you unserialize. Doing this can help protect you from code injection attacks
@@ -267,7 +262,7 @@ To install the Super Closure library in your project using Composer, simply
 require the project with Composer:
 
 ```bash
-$ composer require jeremeamia/superclosure
+$ composer require antto1/superclosure
 ```
 
 You may of course manually update your require block if you so choose:
@@ -275,7 +270,7 @@ You may of course manually update your require block if you so choose:
 ```json
 {
     "require": {
-        "jeremeamia/superclosure": "^2.0"
+        "antto1/superclosure": "^2.0"
     }
 }
 ```
@@ -312,19 +307,6 @@ GitHub.
 Since then, I've made a few iterations on the code, and the most recent
 iterations have been more robust, thanks to the usage of the fabulous
 [nikic/php-parser][6] library.
-
-## Who is using SuperClosure?
-
-- [Laravel](https://github.com/laravel/framework) - Serializes a closure to potentially push onto a job queue.
-- [HTTP Mock for PHP](https://github.com/InterNations/http-mock) - Serialize a closure to send to remote server within
-  a test workflow.
-- [Jumper](https://github.com/kakawait/Jumper) - Serialize a closure to run on remote host via SSH.
-- [nicmart/Benchmark](https://github.com/nicmart/Benchmark) - Uses the `ClosureParser` to display a benchmarked
-  Closure's code.
-- [florianv/business](https://github.com/florianv/business) - Serializes special days to store business days definitions.
-- [zumba/json-serializer](https://github.com/zumba/json-serializer) - Serializes PHP variables into JSON format.
-- [PHP-DI](http://php-di.org/) - Compiles closure definitions into optimized PHP code.
-- Please let me know if and how your project uses Super Closure.
 
 ## Alternatives
 
