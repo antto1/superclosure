@@ -1,16 +1,12 @@
 {
-    "name": "jeremeamia/superclosure",
+    "name": "antto1/superclosure",
     "type": "library",
     "description": "Serialize Closure objects, including their context and binding",
     "keywords": ["closure", "serialize", "serializable", "function", "parser", "tokenizer", "lambda"],
-    "homepage": "https://github.com/jeremeamia/super_closure",
     "license": "MIT",
     "authors": [
         {
-            "name": "Jeremy Lindblom",
-            "email": "jeremeamia@gmail.com",
-            "homepage": "https://github.com/jeremeamia",
-            "role": "Developer"
+            "name": "Antto"
         }
     ],
     "require": {
